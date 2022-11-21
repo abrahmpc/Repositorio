@@ -1,0 +1,458 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 55px;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* seccion del header */
+.menu__header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    background-color: #f3f1f1f8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu__list{
+    display: flex;
+    gap: 3rem;
+}
+
+.menu__list__item a{
+    transition: 150ms;
+}
+
+.menu__list__item a:hover, .links-social li a:hover{
+    border-bottom: 2px solid #219ebc;
+    /* font-size: 18px; */
+}
+
+/*.logo{
+    width: 300px;
+    padding-right: 1rem;
+} */
+
+.info .container{
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.links-social{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.links-social li a img{
+    margin-left: 3px;
+}
+
+.links-social li a{
+    transition: 150ms all;
+}
+
+.tittle-container{
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    order: -1;
+}
+
+.tittle-container h1{
+    font-size: 2rem;
+}
+
+.tittle-container p{
+    font-size: 1.2rem;
+} 
+
+.titulo-sobre{
+    font-size: 20px;
+    color: #495057;
+}
+
+.sobre-mi{
+    padding: 3rem 5rem;
+    background-color: #EAF2FD;
+    line-height: 1.4rem;
+}
+
+.skills-titulo, .hobbies-titulo, .formacion-titulo, .proyectos-titulo, .contacto-titulo{
+    font-weight: bold;
+    font-size: 26px;
+    color:  #464646;
+}
+
+.skills{
+    text-align: center;
+}
+
+
+/* .skill-item{
+    background-color: #fdfdfd;
+}  */
+
+.skills-container, .hobbies-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-name, .hobbies-name{
+    padding: 3px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.skill-item, .hobbies-item{
+    transition: 150ms all;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.skill-item:hover, .hobbies-item:hover{
+    transform: scale(1.2);
+}
+
+.hobbies{
+    text-align: center;
+}
+
+.hobbies-titulo, .formacion-titulo, .contacto-titulo{
+    margin-top: 4rem;
+}
+
+.academic__title{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.academic__courses__list{
+    text-align: center;
+}
+.academic__courses{
+    display: flex;
+    justify-content: center;
+}
+
+.academic__courses__box{
+    padding-bottom: 4rem;
+}
+
+.academic__courses__item__img img{
+    width: 20rem;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px;
+}
+
+#transi:hover{
+    transition: all 400ms ease;
+    width: 20rem;
+    transform: translate(0, -20px);
+}
+
+.academic__courses__item__title h4{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    color: rgb(75, 73, 73);
+    line-height: 0;
+}
+
+.academic__courses__item__subtitle p{
+    text-align: center;
+    font-size: 25px;
+    line-height: 0;
+}
+
+section[id]{
+    scroll-margin-top: 55px;
+}
+
+.proyectos-titulo{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.proyecto-1, .proyecto-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyecto-contenido h4, .proyecto-contenido-2 h4{
+    text-align: center;
+}
+
+.proyecto-contenido{
+    padding-left: 3rem;
+}
+
+.proyecto-contenido-2{
+    padding-right: 3rem;
+}
+
+.proyecto-1-img, .proyecto-2-img, .proyecto-3-img, .proyecto-4-img, .proyecto-5-img{
+    width: 60%;
+}
+
+.proyecto-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.proyecto-links-2{
+    margin-left: 27px;
+}
+
+.btn a{
+    padding-top: 3px;
+    border-radius: .5rem;
+    color: #000;
+    padding: 1rem;
+}
+
+.btn-1, .btn-2, .btn-3, .btn-4, .btn-5, .btn-6, .btn-7, .btn-8, .btn-9, .btn-10{
+    transition: 150ms all;
+}
+
+.btn-1 a{
+    background-color:#86B9FF;
+    font-style: italic;
+}
+
+.btn-2 a{
+    background-color:#327EE8;
+    font-style: italic;
+}
+
+.btn-1 a:hover{
+    background-color: #21bbb1;
+    color: #F5F5F5;
+}
+
+.btn-2 a:hover{
+    background-color:#21bbb1;
+    color: #000;
+}
+/* Boton 2*/
+.btn-3 a{
+    background-color:#86B9FF;
+    font-style: italic;
+}
+
+.btn-4 a{
+    background-color:#327EE8;
+    font-style: italic;
+}
+
+.btn-3 a:hover{
+    background-color:#21bbb1;
+    color: #F5F5F5;
+}
+
+.btn-4 a:hover{
+    background-color:#21bbb1;
+    color: #000;
+}
+/* Boton 3*/
+.btn-5 a{
+    background-color: #86B9FF;
+    font-style: italic;
+}
+
+.btn-6 a{
+    background-color:#327EE8;
+    font-style: italic;
+}
+
+.btn-5 a:hover{
+    background-color: #21bbb1;
+    color: #F5F5F5;
+}
+
+.btn-6 a:hover{
+    background-color:#21bbb1;
+    color: #000;
+}
+/* Boton 4*/
+.btn-7 a{
+    background-color:#86B9FF;
+    font-style: italic;
+}
+
+.btn-8 a{
+    background-color:#327EE8;
+    font-style: italic;
+}
+
+.btn-7 a:hover{
+    background-color:#21bbb1;
+    color: #F5F5F5;
+}
+
+.btn-8 a:hover{
+    background-color:#21bbb1;
+    color: #000;
+}
+/* Boton 5*/
+.btn-9 a{
+    background-color:#86B9FF;
+    font-style: italic;
+}
+
+.btn-10 a{
+    background-color:#327EE8;
+    font-style: italic;
+}
+
+.btn-9 a:hover{
+    background-color:#21bbb1;
+    color: #F5F5F5;
+}
+
+.btn-10 a:hover{
+    background-color:#21bbb1;
+    color: #000;
+}
+
+.btn-1:hover, .btn-2:hover, .btn-3:hover, .btn-4:hover, .btn-5:hover, .btn-6:hover,.btn-7:hover, .btn-8:hover,.btn-9:hover, .btn-10:hover{
+    transform: scale(1.05);
+}
+
+.proyecto-1-img, .proyecto-2-img, .proyecto-3-img, .proyecto-4-img, .proyecto-5-img{
+    margin-top: 2.5rem;
+}
+
+.contacto{
+    background-color: #EAF2FD;
+    text-align: center;
+}
+
+.contacto-container{
+    display: flex;
+    justify-content: center;
+}
+.contacto-titulo{
+    margin-bottom: 0;
+}
+
+.contacto-form{
+    margin-left: 10px;
+    width: 50%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-form label{
+    color: #464646;
+    padding-bottom: 5px;
+}
+
+.contacto-form input{
+    width: 80%;
+    height: 2rem;
+    margin-bottom: 2rem;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+    background-color: #EAF2FD;
+    border-bottom: 1px solid #0077b6;
+    font-family: 'Raleway', sans-serif;
+    transition: 150ms all;
+}
+
+.contacto-form input:focus{
+    border-left: 1px solid #0077b6;
+}
+
+.contacto-form input::placeholder{
+    color: rgba(0, 0, 0, 0.493);
+}
+
+.mensaje{
+    padding: 5px;
+    resize: none;
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: #EAF2FD;
+    border-bottom: 1px solid #0077b6;
+    border-left: 1px solid #0077b6;
+}
+
+.btn-enviar{
+    padding: 5px;
+    margin-top: 2rem;
+    width: 25%;
+    height: 50px;
+    border: none;
+    background-color: #0077b6;
+    font-family: 'Raleway', sans-serif;
+    color: #F5F5F5;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: 150ms all;
+    border-radius: 5px;
+}
+
+.btn-enviar:hover{
+    transform: scale(1.05);
+}
+
+.footer-container{
+    text-align: center;
+    padding: 0;
+}
+
+.info-footer span{
+    color: #0077b6;
+}
